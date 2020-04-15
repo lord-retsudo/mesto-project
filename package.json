@@ -1,7 +1,7 @@
 {
   "name": "YaPraktikum-sprint12",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
@@ -19,5 +19,5 @@
     "express": "^4.17.1"
   },
   "keywords": [],
-  "description": ""
+  "description": "First API for Mesto project"
 }

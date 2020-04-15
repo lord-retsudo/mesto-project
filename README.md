@@ -12,7 +12,9 @@ Sprint12 for Yandex Prarktikum
 ### Installation 
 
 git clone https://github.com/lord-retsudo/mesto-project.git
+
 cd mesto-project
+
 npm i 
 
 ### Run

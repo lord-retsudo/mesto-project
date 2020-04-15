@@ -1,5 +1,6 @@
 const path = require('path');
 const fsPromises = require('fs').promises;
+const cards = require('express').Router();
 
 const getCards = (req, res) => {
   fsPromises.readFile(path.join(__dirname, '../data/cards.json'), { encoding: 'utf8' })
@@ -7,8 +8,10 @@ const getCards = (req, res) => {
       res.status(200).json(JSON.parse(data));
     })
     .catch((err) => {
-      res.status(500).send({ message: err });
+      res.status(500).send({ message: "На сервере произошла ошибка" });
     });
 };
 
-module.exports = { getCards };
+cards.get('/', getCards);
+
+module.exports = cards;
