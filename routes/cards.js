@@ -7,8 +7,8 @@ const getCards = (req, res) => {
     .then((data) => {
       res.status(200).json(JSON.parse(data));
     })
-    .catch((err) => {
-      res.status(500).send({ message: "На сервере произошла ошибка" });
+    .catch(() => {
+      res.status(500).send({ message: 'На сервере произошла ошибка' });
     });
 };
 
